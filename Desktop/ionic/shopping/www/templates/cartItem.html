@@ -1,0 +1,12 @@
+
+<div class="card" ng-hide="{{item[index].productName == undefined}}">
+            <div class="item item-image">
+            <img src="{{item[index].imagePath}}" style="width:100%;height:200px;max-width:400px;max-height:500px;">
+            </div>
+            <div class='item' style="text-align:center">
+                <h3>{{item[index].productName}}</h3>
+            <p>{{item[index].productPrice | currency:"THB ":"0"}}</p>
+            <a class="button button-outline icon-right ion-ios-cart-outline button-balanced">Add</a>
+            </div>
+</div> 
+
